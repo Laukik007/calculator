@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+			integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+			integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<title>Calculator</title>
+	</head>
+	<body id="calculator">
+		<div class="main">
+			<div class="container">
+				<table>
+					<tr>
+						<td colspan="3">
+							<input type="text" id="result" readonly />
+						</td>
+						<td>
+							<input
+								type="button"
+								value="AC"
+								style="background-color: #129688"
+								onclick="clr()"
+							/>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input
+								type="button"
+								value="7"
+								onclick="buttonPressed('7')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="8"
+								onclick="buttonPressed('8')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="9"
+								onclick="buttonPressed('9')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="+"
+								onclick="buttonPressed('+')"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input
+								type="button"
+								value="4"
+								onclick="buttonPressed('4')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="5"
+								onclick="buttonPressed('5')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="6"
+								onclick="buttonPressed('6')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="-"
+								onclick="buttonPressed('-')"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input
+								type="button"
+								value="1"
+								onclick="buttonPressed('1')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="2"
+								onclick="buttonPressed('2')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="3"
+								onclick="buttonPressed('3')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="/"
+								onclick="buttonPressed('/')"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input
+								type="button"
+								value="."
+								onclick="buttonPressed('.')"
+							/>
+						</td>
+						<td>
+							<input
+								type="button"
+								value="0"
+								onclick="buttonPressed('0')"
+							/>
+						</td>
+						<td>
+							<input type="button" value="=" onclick="solve()" />
+						</td>
+						<td>
+							<input
+								type="button"
+								value="x"
+								onclick="buttonPressed('*')"
+							/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
